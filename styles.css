@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  background: #fff0f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #ff1493;
+}
+
+.buttons {
+  position: relative;
+  width: 300px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 0 40px;
+  font-size: 18px;
+  height: 60px;
+  line-height: 60px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+  vertical-align: middle;
+  user-select: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#yes {
+  background: #ff69b4;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  transform-origin: center center;
+  z-index: 2;
+}
+
+#no {
+  background: #d3d3d3;
+  color: black;
+  width: 80px;
+  text-align: center;
+  user-select: none;
+  z-index: 1;
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: translate(0px); }
+  25% { transform: translate(-5px); }
+  50% { transform: translate(5px); }
+  75% { transform: translate(-5px); }
+  100% { transform: translate(0px); }
+}
